@@ -1,5 +1,2 @@
 #!/bin/bash
-
-num=$1
-binary=$(echo "obase=2; $num" | bc)
-printf "%8s\n" "$binary" | tr ' ' '0'
+printf "%08d\n" "$(echo "obase=2; $1" | bc)" | tr ' ' '0'
