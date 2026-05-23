@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 num=$1
 binary=$(echo "obase=2; $num" | bc)
